@@ -23,8 +23,51 @@ img{
     float: left;
     width: 25%;
 }
-
+.menu{
+    float: left;
+    width: 100%;
+    padding: 15px;
+}
+.menu li{
+  float: left;  
+  list-style: none;
+  margin: 10px 5px;
+}
+.menu li a{
+    text-decoration: none;
+    font-size: 18px;
+}
+.menu .right-item{
+    float: right;
+}
+.mobile-menu li{
+    list-style: none; 
+}
+.mobile-menu li a{
+    text-decoration: none;
+    padding: 10px;
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #cdcdcd;
+}
+#icon-menu{
+    float: right;
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
 @media screen and (max-width: 768px) {
+    /* menu in mobile */
+    .menu{
+        display: none;
+    }
+    #icon-menu{
+        display: block;
+    }
+    .mobile-menu.active{
+        display: block;
+    }
     /* code css ở đây chỉ nhận khi màn hình thiết bị (trình duyệt) không vượt quá 768px */
     .container{
         width: 100%;
